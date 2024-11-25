@@ -1,0 +1,49 @@
+.contact {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+body {
+  background-color: wheat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures the body takes full height of the screen */
+  display: flex;
+  flex-direction: column; /* This will allow for vertical stacking of content */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.dialog-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 99999; /* High z-index to ensure it appears above everything */
+  width: 300px;
+  text-align: center;
+}
+
+

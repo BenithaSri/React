@@ -1,0 +1,132 @@
+/* Adding wheat background to the body */
+body {
+  background-color: wheat;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100vh; /* Ensures the body takes full height of the screen */
+  display: flex;
+  flex-direction: column; /* This will allow for vertical stacking of content */
+}
+
+/* Container Styling */
+.container {
+  flex: 1; /* Ensures the container fills the available vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers content vertically */
+  margin: 0; /* Removes unnecessary margin */
+  background-color: wheat; /* Ensures the wheat background spans the container */
+  width: 100vw; /* Full viewport width */
+  height: 220vh; /* Full viewport height */
+  box-sizing: border-box; /* Ensures padding/border is included in dimensions */
+}
+
+
+/* Portfolio Box Styling */
+
+
+/* Section Styling */
+p {
+  color: black; /* Default text color */
+}
+
+
+h3 {
+  color: black;
+  margin-bottom: 20px; /* Adjusted for consistent spacing */
+}
+
+h2 {
+  color: black;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/* List Styling */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Programming Languages Styling */
+.programming-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Adjusted gap to be smaller for better consistency */
+}
+
+.sub-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle; /* Aligns the image vertically with the text */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Reduced margin to match the spacing style */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover Effect for Dialog Box */
+.skill-item:hover .dialog-box {
+  display: block;
+}
+
+.dialog-box {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: -50px; /* Adjusted to fit position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dialog-box h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white; /* Ensure the title is white */
+}
+
+.dialog-box p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: white; /* Ensure the paragraph text is white */
+}
+
+/* Additional Styling to Ensure Consistency */
+.dialog-box h4,
+.dialog-box p {
+  word-wrap: break-word;
+}
+
+.sub-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Reduced margin to match the style */
+}
+
+.sub-list li img {
+  margin-right: 10px; /* Consistent spacing between the image and text */
+}
+
+.sub-list li:hover .dialog-box h4,
+.sub-list li:hover .dialog-box p {
+  color: white; /* Make sure the text color is white when hovered */
+}

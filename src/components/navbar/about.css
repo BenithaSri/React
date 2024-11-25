@@ -1,0 +1,210 @@
+/* General body styling */
+body {
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures the body takes full height of the screen */
+    display: flex;
+    flex-direction: column; /* This will allow for vertical stacking of content */
+}
+
+p{
+    color: black;
+}
+
+/* Container for the about section */
+.about-container {
+    
+    background-color: wheat;flex: 1; /* This ensures the content section takes up available space */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 0; /* Remove any extra top margin */
+}
+
+
+
+/* Content section */
+.about-content {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+
+.about-h1{
+    background-color: white;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+}
+
+.about-h3{
+    color: black;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.about-h2{
+    text-decoration: none;
+    border-bottom: 0cm;
+}
+
+/* Paragraph styling */
+p {
+    color: black;
+    line-height: 1.7;
+    font-size: large;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4c65af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+}
+
+button:hover {
+    background-color: #4592a0;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Position the download button at the bottom of the page */
+.download-btn {
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Styling list items inside the content */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: medium;
+    
+}
+
+/* For the nested list */
+
+
+.about-li{
+    list-style-type: circle;
+    color: black;
+
+}
+
+/* Break between sections */
+br {
+    margin: 20px 0;
+}
+
+
+/* Enable smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  
+    .contact-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+  
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+    .form-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+  
+    .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+  
+    .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+ }
+  
+    textarea {
+    resize: none; /* Prevent resizing for consistency */
+}
+  
+    .submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+.submit-btn:active {
+    transform: scale(0.98); /* Slight click effect */
+}
+
+
