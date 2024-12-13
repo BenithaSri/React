@@ -34,10 +34,14 @@
 
 .nav-menu li:hover {
   color: #3f054d;
+  transition: all 0.3s ease;
+  border: 2px solid #9000ff; 
+  cursor: pointer;
+  border-radius: 90px;
 }
 
 .nav-connect {
-  color: rgb(12, 11, 11);
+  color: white;
   margin-left: 20px;
   padding: 10px 20px; /* Adjust padding for a slimmer look */
   border-radius: 50px;

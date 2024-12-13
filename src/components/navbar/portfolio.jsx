@@ -126,22 +126,6 @@ const Portfolio = () => {
                     )}
                   </li>
                   <li
-                    onMouseEnter={() => handleHover("SQL")}
-                    onMouseLeave={handleLeave}
-                    className="skill-item">
-                    <img src={sql} className="icon-img" alt="SQL Icon" />
-                    SQL
-                    {hoveredSkill === "SQL" && (
-                      <div className="dialog-box">
-                        <h4>SQL</h4>
-                        <p>
-                          Proficient in writing complex SQL queries, designing
-                          normalized databases, and ensuring data integrity.
-                        </p>
-                      </div>
-                    )}
-                  </li>
-                  <li
                     onMouseEnter={() => handleHover("React")}
                     onMouseLeave={handleLeave}
                     className="skill-item">

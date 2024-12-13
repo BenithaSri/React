@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -68,12 +68,6 @@ const Contact = () => {
           <li>
             <MdEmail className="icon" />:{" "}
             <a href="mailto:panchagirib@gmail.com">panchagirib@gmail.com</a>
-          </li>
-          <li>
-            <MdPhone className="icon" />:{" "}
-            <a href="tel:+16605281964" style={{ color: "blue" }}>
-              +16605281964
-            </a>
           </li>
           <li>
             <FaLinkedin className="icon" />:{" "}

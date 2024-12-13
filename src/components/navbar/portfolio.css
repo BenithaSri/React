@@ -86,16 +86,16 @@ ul {
 .dialog-box {
   display: none; /* Initially hidden */
   position: absolute;
-  top: -50px; /* Adjusted to fit position above the icon */
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%; /* Centered vertically relative to the icon */
+  left: 100%; /* Positioned completely to the right of the icon */
+  transform: translate(0, -50%); /* Align vertically */
   width: 200px;
   background-color: rgba(0, 0, 0, 0.9); /* Darker background */
   color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 1; /* Ensure it's above other elements */
 }
 
 .dialog-box h4 {
@@ -107,10 +107,10 @@ ul {
 .dialog-box p {
   font-size: 14px;
   margin-bottom: 0;
-  color: white; /* Ensure the paragraph text is white */
+  color: white; 
 }
 
-/* Additional Styling to Ensure Consistency */
+
 .dialog-box h4,
 .dialog-box p {
   word-wrap: break-word;
